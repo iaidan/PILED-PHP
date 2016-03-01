@@ -24,7 +24,7 @@ $leds = array(7, 0, 2, 1, 3, 4, 5, 6);
 
 switch($args[0]) {
     case "led":
-        if (!isset($args[1] || !in_array($args[1], $leds)) {
+        if (!isset($args[1]) || !in_array($args[1], $leds)) {
             echo "LED does not exist.";
         } else {
             if (isset($args[2])) {
