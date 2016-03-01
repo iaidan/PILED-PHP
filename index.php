@@ -17,7 +17,7 @@ $path = "//" . $path . $dir;
 
 if (isset($_REQUEST["path"]) && !empty($_REQUEST["path"])) {
     $path = str_replace(".php", "", str_replace("./", "", $_REQUEST["path"]));
-    $args = explode("/", path);
+    $args = explode("/", $path);
 }
 
 $leds = array(7, 0, 2, 1, 3, 4, 5, 6);
